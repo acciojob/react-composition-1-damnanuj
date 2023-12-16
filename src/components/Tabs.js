@@ -7,12 +7,12 @@ const Tabs =({tabData}) => {
             <ul>
                 {
                     tabData.map((tab)=>(
-                        <li onClick={()=>setActiveTab(tab.content)}>{tab.title}</li>
+                        <li onClick={()=>setActiveTab(tab)}>{tab.title}</li>
                     ))
                 }
             </ul>
             <div>
-                activeTab && <p>{activeTab}</p>
+                activeTab && <p>{activeTab.content}</p>
             </div>
         </div>
     )
