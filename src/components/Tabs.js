@@ -1,4 +1,4 @@
-import react,{useState} from "react";
+import React,{useState} from "react";
 
 const Tabs =({tabData}) => {
     const[activeTab, setActiveTab] = useState(tabData[0])
@@ -12,7 +12,7 @@ const Tabs =({tabData}) => {
                 }
             </ul>
             <div>
-                activeTab && <p>{activeTab.content}</p>
+                <p>{activeTab.content}</p>
             </div>
         </div>
     )
